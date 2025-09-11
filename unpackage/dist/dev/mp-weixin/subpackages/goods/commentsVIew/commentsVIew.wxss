@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.comment-page.data-v-20917fd6 {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 120rpx;
+}
+/* 商品信息区域 */
+.product-info.data-v-20917fd6 {
+  background: #fff;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+}
+.product-image.data-v-20917fd6 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 12rpx;
+}
+.product-details.data-v-20917fd6 {
+  flex: 1;
+}
+.product-name.data-v-20917fd6 {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16rpx;
+  display: block;
+}
+.product-price.data-v-20917fd6 {
+  display: flex;
+  align-items: baseline;
+}
+.product-price .price-symbol.data-v-20917fd6 {
+  font-size: 24rpx;
+  color: #ff4d4f;
+  margin-right: 4rpx;
+}
+.product-price .price-value.data-v-20917fd6 {
+  font-size: 36rpx;
+  color: #ff4d4f;
+  font-weight: 700;
+}
+/* 评价内容区域 */
+.comment-content.data-v-20917fd6 {
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 30rpx;
+}
+.section-title.data-v-20917fd6 {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 24rpx;
+  display: block;
+}
+/* 评分区域 */
+.rating-section.data-v-20917fd6 {
+  margin-bottom: 40rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.rating-stars.data-v-20917fd6 {
+  display: flex;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+.star-item.data-v-20917fd6 {
+  padding: 8rpx;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.star-item.data-v-20917fd6:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.rating-text.data-v-20917fd6 {
+  font-size: 28rpx;
+  color: #666;
+}
+/* 评价输入区域 */
+.comment-input-section.data-v-20917fd6 {
+  margin-bottom: 40rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.comment-textarea.data-v-20917fd6 {
+  width: 100%;
+  min-height: 200rpx;
+  background: #f8f9fa;
+  border: 1rpx solid #e9ecef;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.comment-textarea.data-v-20917fd6::-webkit-input-placeholder {
+  color: #999;
+}
+.comment-textarea.data-v-20917fd6::placeholder {
+  color: #999;
+}
+/* 图片上传区域 */
+.image-upload-section .section-title.data-v-20917fd6 {
+  margin-bottom: 20rpx;
+}
+.image-upload-container.data-v-20917fd6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+.uploaded-images.data-v-20917fd6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+.image-item.data-v-20917fd6 {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+}
+.uploaded-image.data-v-20917fd6 {
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+}
+.delete-btn.data-v-20917fd6 {
+  position: absolute;
+  top: -8rpx;
+  right: -8rpx;
+  width: 32rpx;
+  height: 32rpx;
+  background: #ff4d4f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-btn.data-v-20917fd6 {
+  width: 160rpx;
+  height: 160rpx;
+  border: 2rpx dashed #d9d9d9;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+  transition: border-color 0.3s ease;
+}
+.upload-btn text.data-v-20917fd6 {
+  font-size: 24rpx;
+  color: #999;
+}
+.upload-btn .upload-tip.data-v-20917fd6 {
+  font-size: 20rpx;
+  color: #ccc;
+}
+.upload-btn.data-v-20917fd6:active {
+  border-color: #1890ff;
+}
+/* 匿名评价设置 */
+.anonymous-section.data-v-20917fd6 {
+  padding-top: 30rpx;
+  border-top: 1rpx solid #f0f0f0;
+}
+.anonymous-option.data-v-20917fd6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  cursor: pointer;
+}
+.option-content.data-v-20917fd6 {
+  flex: 1;
+}
+.option-text.data-v-20917fd6 {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8rpx;
+}
+.option-desc.data-v-20917fd6 {
+  font-size: 24rpx;
+  color: #999;
+}
+.switch-container.data-v-20917fd6 {
+  flex-shrink: 0;
+}
+.switch.data-v-20917fd6 {
+  width: 80rpx;
+  height: 44rpx;
+  background: #e0e0e0;
+  border-radius: 22rpx;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.switch.active.data-v-20917fd6 {
+  background: #1890ff;
+}
+.switch-handle.data-v-20917fd6 {
+  width: 36rpx;
+  height: 36rpx;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4rpx;
+  left: 4rpx;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+.switch.active .switch-handle.data-v-20917fd6 {
+  -webkit-transform: translateX(36rpx);
+          transform: translateX(36rpx);
+}
+/* 底部提交区域 */
+.submit-section.data-v-20917fd6 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 24rpx 30rpx;
+  box-shadow: 0 -2rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+.submit-btn.data-v-20917fd6 {
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.submit-btn text.data-v-20917fd6 {
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: 600;
+}
+.submit-btn.disabled.data-v-20917fd6 {
+  background: #d9d9d9;
+}
+.submit-btn.disabled text.data-v-20917fd6 {
+  color: #999;
+}
+.submit-btn.data-v-20917fd6:not(.disabled):active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  box-shadow: 0 2rpx 8rpx rgba(24, 144, 255, 0.3);
+}
+

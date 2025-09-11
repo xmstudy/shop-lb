@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.home-container.data-v-92bb8f34 {
+  width: 100%;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.top-search-bar.data-v-92bb8f34 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #34C759 0%, #34C759 30%, #5DD9A4 100%);
+  box-shadow: 0 2px 10px rgba(52, 199, 89, 0.2);
+  height: 110rpx !important;
+  /* 固定渐变背景高度为152rpx */
+}
+.search-content.data-v-92bb8f34 {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 30rpx;
+  /* 右侧空间由动态计算的搜索框宽度控制，不再需要固定的padding-right */
+}
+.search-box.data-v-92bb8f34 {
+  /* 宽度由内联样式动态控制，不再使用flex: 1 */
+  background: #ffffff;
+  border-radius: 44rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-width: 200rpx;
+  /* 确保最小宽度 */
+  max-width: calc(100vw - 300rpx);
+  /* 确保不会超出屏幕 */
+}
+.search-box.data-v-92bb8f34:active {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.search-icon.data-v-92bb8f34 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-text.data-v-92bb8f34 {
+  flex: 1;
+  font-size: 26rpx;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+.gradient-bridge.data-v-92bb8f34 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 180rpx;
+  background: linear-gradient(to bottom, #5DD9A4 0%, #5DD9A4 50%, #B8E5D4 100%);
+  /* 三段式渐变：顶部中色，中间中色，底部浅色 */
+  top: 0;
+  z-index: 1;
+}
+.banner-section.data-v-92bb8f34 {
+  padding: 0 30rpx 30rpx 30rpx;
+  /* 顶部不要padding，让渐变容器紧贴搜索栏 */
+  position: relative;
+  z-index: 10;
+  /* 在渐变背景之上，但不超过搜索栏 */
+  flex-shrink: 0;
+  /* 不允许压缩 */
+  margin-bottom: 20rpx;
+}
+.swiper-container.data-v-92bb8f34 {
+  position: relative;
+  margin-top: 100rpx;
+  /* 给轮播区域添加顶部间距 */
+  z-index: 2;
+  /* 确保在渐变背景之上 */
+}
+.custom-indicator.data-v-92bb8f34 {
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  z-index: 10;
+}
+.indicator-dot.data-v-92bb8f34 {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background-color: #cccccc;
+  transition: all 0.3s ease;
+}
+.indicator-dot--active.data-v-92bb8f34 {
+  background-color: #34C759;
+  width: 24rpx;
+  border-radius: 6rpx;
+}
+.banner-skeleton.data-v-92bb8f34 {
+  width: 100%;
+  height: 224rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  margin-top: 100rpx;
+  /* 给骨架屏添加顶部间距 */
+  position: relative;
+  z-index: 2;
+  /* 确保在渐变背景之上 */
+}
+.skeleton-banner.data-v-92bb8f34 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  -webkit-animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+          animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+}
+.function-blocks.data-v-92bb8f34 {
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  margin-top: -30rpx;
+  /* 上移避免空缺 */
+  flex-shrink: 0;
+  /* 不允许压缩 */
+}
+.block-row.data-v-92bb8f34 {
+  margin-bottom: 24rpx;
+}
+.block-row.small-blocks.data-v-92bb8f34 {
+  display: flex;
+  gap: 24rpx;
+}
+.block-item.data-v-92bb8f34 {
+  border-radius: 24rpx;
+  padding: 60rpx 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.block-item.data-v-92bb8f34:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.block-item.orange-block.data-v-92bb8f34 {
+  background: linear-gradient(135deg, #FF8A00 0%, #FF6B35 100%);
+  box-shadow: 0 8rpx 32rpx rgba(255, 138, 0, 0.3);
+}
+.block-item.blue-block.data-v-92bb8f34 {
+  background: linear-gradient(135deg, #2E5984 0%, #1E3A5F 100%);
+  box-shadow: 0 8rpx 32rpx rgba(46, 89, 132, 0.3);
+}
+.block-item.small.data-v-92bb8f34 {
+  flex: 1;
+  padding: 40rpx 20rpx;
+}
+.block-title.data-v-92bb8f34 {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.3);
+  letter-spacing: 2rpx;
+}
+.video.data-v-92bb8f34 {
+  height: 200rpx;
+}
+.featured-products.data-v-92bb8f34 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+  padding-bottom: 100rpx;
+  /* 增加底部内边距，为底部tabbar留出足够空间 */
+  flex: 1;
+  /* 占据剩余空间 */
+}
+.products-header.data-v-92bb8f34 {
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+.header-content.data-v-92bb8f34 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rpx;
+}
+.header-title.data-v-92bb8f34 {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #333;
+}
+.header-desc.data-v-92bb8f34 {
+  font-size: 26rpx;
+  color: #666;
+}
+.products-grid.data-v-92bb8f34 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+.product-card-enhanced.data-v-92bb8f34 {
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.product-card-enhanced.data-v-92bb8f34:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.card-image-container.data-v-92bb8f34 {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+.card-image.data-v-92bb8f34 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-skeleton.data-v-92bb8f34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  -webkit-animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+          animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+}
+.card-badge-left.data-v-92bb8f34 {
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+  z-index: 2;
+}
+.badge-icon.data-v-92bb8f34 {
+  width: 60rpx;
+  height: 60rpx;
+}
+.card-content.data-v-92bb8f34 {
+  padding: 20rpx;
+}
+.product-desc.data-v-92bb8f34 {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  min-height: 67rpx;
+  /* 保证两行的最小高度 */
+}
+.price-section.data-v-92bb8f34 {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+.current-price.data-v-92bb8f34 {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #ff4757;
+}
+.original-price.data-v-92bb8f34 {
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+.product-skeleton.data-v-92bb8f34 {
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.skeleton-image.data-v-92bb8f34 {
+  width: 100%;
+  height: 300rpx;
+  background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  -webkit-animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+          animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+}
+.skeleton-content.data-v-92bb8f34 {
+  padding: 20rpx;
+}
+.skeleton-desc.data-v-92bb8f34,
+.skeleton-price.data-v-92bb8f34 {
+  background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  -webkit-animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+          animation: skeleton-loading-data-v-92bb8f34 1.8s infinite ease-in-out;
+  margin-bottom: 10rpx;
+  border-radius: 4rpx;
+}
+.skeleton-desc.data-v-92bb8f34 {
+  height: 67rpx;
+  /* 匹配两行描述的高度 */
+  width: 100%;
+}
+.skeleton-price.data-v-92bb8f34 {
+  height: 24rpx;
+  width: 40%;
+}
+@-webkit-keyframes skeleton-loading-data-v-92bb8f34 {
+0% {
+    background-position: 200% 0;
+}
+100% {
+    background-position: -200% 0;
+}
+}
+@keyframes skeleton-loading-data-v-92bb8f34 {
+0% {
+    background-position: 200% 0;
+}
+100% {
+    background-position: -200% 0;
+}
+}
+

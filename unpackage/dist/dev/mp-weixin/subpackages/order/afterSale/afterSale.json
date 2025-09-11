@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "申请售后",
+  "usingComponents": {
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon"
+  }
+}

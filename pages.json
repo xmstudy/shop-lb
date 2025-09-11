@@ -1,0 +1,232 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/Cart/Cart",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/RmVIew/RmVIew",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/AsView/AsView",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/share/share",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"navigationBarRightButton": {
+					"hide": true
+				}
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "subpackages/Rm",
+			"pages": [{
+				"path": "index/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+			}]
+		},
+		{
+			"root": "subpackages/search",
+			"pages": [{
+				"path": "index/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom",
+					"navigationBarRightButton": {
+						"hide": true
+					}
+				}
+			}]
+		},
+		{
+			"root": "subpackages/address",
+			"pages": [{
+					"path": "list/list",
+					"style": {
+						"navigationBarTitleText": "地址列表"
+					}
+				},
+				{
+					"path": "detail/detail",
+					"style": {
+						"navigationBarTitleText": "地址详情"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpackages/order",
+			"pages": [{
+					"path": "list/list",
+					"style": {
+						"navigationBarTitleText": "订单"
+					}
+				},
+				{
+					"path": "detail/detail",
+					"style": {
+						"navigationBarTitleText": "确认订单"
+					}
+				},
+				{
+					"path": "logistics/logistics",
+					"style": {
+						"navigationBarTitleText": "物流信息"
+
+					}
+				},
+				{
+					"path": "evaluate/evaluate",
+					"style": {
+						"navigationBarTitleText": "商品评价"
+					}
+				},
+				{
+					"path": "afterSale/afterSale",
+					"style": {
+						"navigationBarTitleText": "申请售后"
+					}
+				},
+				{
+					"path" : "ViewOrderInfo/ViewOrderInfo",
+					"style" : 
+					{
+						"navigationBarTitleText" : "订单详情"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpackages/user",
+			"pages": [{
+					"path": "center/center",
+					"style": {
+						"navigationBarTitleText": "个人中心"
+					}
+				},
+				{
+					"path": "address/address",
+					"style": {
+						"navigationBarTitleText": "地址管理"
+					}
+				},
+				{
+					"path": "login/login",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path" : "Points/Points",
+					"style" : 
+					{
+						"navigationBarTitleText" : "我的积分"
+					}
+				},
+				{
+					"path" : "Mybalance/Mybalance",
+					"style" : 
+					{
+						"navigationBarTitleText" : "我的余额"
+					}
+				},
+				{
+					"path" : "commentsList/commentsList",
+					"style" : 
+					{
+						"navigationBarTitleText" : "商品评论"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpackages/goods",
+			"pages": [{
+					"path": "detail/detail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarTitleText": "商品详情"
+					}
+				},
+				{
+					"path": "favGoodsList/favGoodsList",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path" : "commentsVIew/commentsVIew",
+					"style" : 
+					{
+						"navigationBarTitleText" : "商品评论"
+					}
+				}
+			]
+
+		},
+		{
+			"root": "subpackages/help",
+			"pages": [{
+					"path": "about/about",
+					"style": {
+						"navigationBarTitleText": "关于我们"
+					}
+				},
+				{
+					"path": "faq/faq",
+					"style": {
+						"navigationBarTitleText": "常见问题"
+					}
+				},
+				{
+					"path": "richText/richText",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

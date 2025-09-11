@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "地址列表",
+  "usingComponents": {
+    "u-loading-icon": "/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon",
+    "u-swipe-action": "/uni_modules/uview-ui/components/u-swipe-action/u-swipe-action",
+    "u-swipe-action-item": "/uni_modules/uview-ui/components/u-swipe-action-item/u-swipe-action-item"
+  }
+}

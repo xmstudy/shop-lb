@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/Cart/Cart",
+    "pages/RmVIew/RmVIew",
+    "pages/AsView/AsView",
+    "pages/mine/mine",
+    "pages/share/share"
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages/Rm",
+      "pages": [
+        "index/index"
+      ]
+    },
+    {
+      "root": "subpackages/search",
+      "pages": [
+        "index/index"
+      ]
+    },
+    {
+      "root": "subpackages/address",
+      "pages": [
+        "list/list",
+        "detail/detail"
+      ]
+    },
+    {
+      "root": "subpackages/order",
+      "pages": [
+        "list/list",
+        "detail/detail",
+        "logistics/logistics",
+        "evaluate/evaluate",
+        "afterSale/afterSale",
+        "ViewOrderInfo/ViewOrderInfo"
+      ]
+    },
+    {
+      "root": "subpackages/user",
+      "pages": [
+        "center/center",
+        "address/address",
+        "login/login",
+        "Points/Points",
+        "Mybalance/Mybalance",
+        "commentsList/commentsList"
+      ]
+    },
+    {
+      "root": "subpackages/goods",
+      "pages": [
+        "detail/detail",
+        "favGoodsList/favGoodsList",
+        "commentsVIew/commentsVIew"
+      ]
+    },
+    {
+      "root": "subpackages/help",
+      "pages": [
+        "about/about",
+        "faq/faq",
+        "richText/richText"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "permission": {},
+  "usingComponents": {}
+}

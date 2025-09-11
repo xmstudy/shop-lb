@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.comments-list-page.data-v-71d9765b {
+  height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+/* 状态栏 */
+.status-bar.data-v-71d9765b {
+  background: #fff;
+}
+/* 导航栏 */
+.nav-bar.data-v-71d9765b {
+  background: #fff;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.nav-content.data-v-71d9765b {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.nav-left.data-v-71d9765b,
+.nav-right.data-v-71d9765b {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-title.data-v-71d9765b {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+/* 主要内容区域 */
+.comments-container.data-v-71d9765b {
+  flex: 1;
+  height: 0;
+}
+/* 评论统计 */
+.comments-stats.data-v-71d9765b {
+  padding: 30rpx;
+  background: #f5f5f5;
+}
+.stats-card.data-v-71d9765b {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+.stats-item.data-v-71d9765b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rpx;
+}
+.stats-number.data-v-71d9765b {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #1890ff;
+}
+.stats-label.data-v-71d9765b {
+  font-size: 24rpx;
+  color: #666;
+}
+.stats-divider.data-v-71d9765b {
+  width: 1rpx;
+  height: 60rpx;
+  background: #e9ecef;
+}
+/* 评论列表 */
+.comments-list.data-v-71d9765b {
+  background: #fff;
+  margin: 0 30rpx 30rpx 30rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+.comment-item.data-v-71d9765b {
+  border-bottom: 1rpx solid #f8f9fa;
+}
+.comment-item.data-v-71d9765b:last-child {
+  border-bottom: none;
+}
+/* 商品信息 */
+.product-info.data-v-71d9765b {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  gap: 20rpx;
+  background: #fafbfc;
+}
+.product-image.data-v-71d9765b {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 12rpx;
+}
+.product-details.data-v-71d9765b {
+  flex: 1;
+}
+.product-name.data-v-71d9765b {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.product-price.data-v-71d9765b {
+  display: flex;
+  align-items: baseline;
+}
+.product-price .price-symbol.data-v-71d9765b {
+  font-size: 20rpx;
+  color: #ff4d4f;
+  margin-right: 4rpx;
+}
+.product-price .price-value.data-v-71d9765b {
+  font-size: 28rpx;
+  color: #ff4d4f;
+  font-weight: 600;
+}
+.nav-arrow.data-v-71d9765b {
+  padding: 8rpx;
+}
+/* 评价内容 */
+.comment-content.data-v-71d9765b {
+  padding: 30rpx;
+}
+.comment-header.data-v-71d9765b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.rating-stars.data-v-71d9765b {
+  display: flex;
+  gap: 4rpx;
+}
+.comment-time.data-v-71d9765b {
+  font-size: 24rpx;
+  color: #999;
+}
+.comment-text.data-v-71d9765b {
+  margin-bottom: 20rpx;
+}
+.comment-text text.data-v-71d9765b {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.6;
+}
+.comment-images.data-v-71d9765b {
+  display: flex;
+  gap: 16rpx;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.comment-image.data-v-71d9765b {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 12rpx;
+}
+/* 商家回复 */
+.merchant-reply.data-v-71d9765b {
+  background: #f8f9fa;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  border-left: 4rpx solid #1890ff;
+}
+.reply-header.data-v-71d9765b {
+  margin-bottom: 12rpx;
+}
+.reply-label.data-v-71d9765b {
+  font-size: 24rpx;
+  color: #1890ff;
+  font-weight: 600;
+}
+.reply-content text.data-v-71d9765b {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+}
+/* 空状态 */
+.empty-state.data-v-71d9765b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 60rpx;
+  text-align: center;
+}
+.empty-image.data-v-71d9765b {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 40rpx;
+  opacity: 0.6;
+}
+.empty-text.data-v-71d9765b {
+  font-size: 32rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+  display: block;
+}
+.empty-tip.data-v-71d9765b {
+  font-size: 26rpx;
+  color: #999;
+  display: block;
+}
+/* 加载状态 */
+.load-more.data-v-71d9765b,
+.no-more.data-v-71d9765b {
+  padding: 40rpx;
+  text-align: center;
+}
+.load-more text.data-v-71d9765b,
+.no-more text.data-v-71d9765b {
+  font-size: 24rpx;
+  color: #999;
+}
+.load-more.data-v-71d9765b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16rpx;
+}
+

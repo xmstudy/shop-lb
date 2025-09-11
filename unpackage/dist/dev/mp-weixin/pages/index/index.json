@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tabbar": "/components/Tabbar",
+    "home": "/pages/home/home",
+    "cart": "/pages/Cart/Cart",
+    "rm-view": "/pages/RmVIew/RmVIew",
+    "as-view": "/pages/AsView/AsView",
+    "mine": "/pages/mine/mine"
+  }
+}
