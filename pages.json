@@ -215,8 +215,7 @@
 				{
 					"path": "richText/richText",
 					"style": {
-						"navigationBarTitleText": "",
-						"navigationStyle": "custom"
+						"navigationBarTitleText": "雷波"
 					}
 				}
 			]

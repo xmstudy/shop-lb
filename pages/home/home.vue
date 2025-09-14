@@ -27,7 +27,7 @@
 					</view>
 
 					<view class="swiper-container" v-else>
-						<u-swiper ref="bannerSwiper" :list="bannerList" height="224rpx" keyName="image" circular
+						<u-swiper ref="bannerSwiper" :list="bannerList" height="320rpx" keyName="image" circular
 							:autoplay="true" :interval="6000" radius="12" :loading="bannerLoading" :error="bannerError"
 							:indicator="false" @load="onBannerLoad" @error="onBannerError" @change="onBannerChange"
 							@click="onBannerClick">
@@ -44,16 +44,15 @@
 				<!-- 功能区块 -->
 				<view class="function-blocks">
 					<view class="block-row">
-						<view class="block-item orange-block" @click="goToLeiBoNongTe">
-							<text class="block-title">套餐专区</text>
-						</view>
+					<view class="block-item package-block" @click="goToTaoCanZhuanQu">
+					</view>
 					</view>
 
 					<view class="block-row small-blocks">
-						<view class="block-item blue-block small" @click="goToLeiBoNongTe">
+						<view class="block-item jump-block small" @click="goToLeiBoNongTe">
 							<text class="block-title">雷波农特</text>
 						</view>
-						<view class="block-item blue-block small" @click="goToXiangZhenDaJi">
+						<view class="block-item jump-block small" @click="goToXiangZhenDaJi">
 							<text class="block-title">乡镇大集</text>
 						</view>
 					</view>
@@ -718,7 +717,7 @@
 
 		.banner-skeleton {
 			width: 100%;
-			height: 224rpx;
+			height: 320rpx;
 			border-radius: 12rpx;
 			overflow: hidden;
 			margin-top: 100rpx; /* 给骨架屏添加顶部间距 */
@@ -769,19 +768,36 @@
 				transform: scale(0.98);
 			}
 
-			&.orange-block {
-				background: linear-gradient(135deg, #FF8A00 0%, #FF6B35 100%);
-				box-shadow: 0 8rpx 32rpx rgba(255, 138, 0, 0.3);
+			&.package-block {
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-image: url('/static/images/tc.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				height: 75px;
+				width: 100%;
+				box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
 			}
 
-			&.blue-block {
-				background: linear-gradient(135deg, #2E5984 0%, #1E3A5F 100%);
-				box-shadow: 0 8rpx 32rpx rgba(46, 89, 132, 0.3);
+			&.jump-block {
+				background-image: url('/static/images/jump_bg.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 74px;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
 			}
 
 			&.small {
 				flex: 1;
-				padding: 40rpx 20rpx;
 			}
 		}
 
@@ -791,7 +807,9 @@
 			color: #ffffff;
 			text-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.3);
 			letter-spacing: 2rpx;
+			text-align: center;
 		}
+
 
 		.video {
 			height: 200rpx;
